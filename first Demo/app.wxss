@@ -1,6 +1,6 @@
 page {
   background-color: #fbf9fe;
-  height: 100%;
+  height: 50%;
 }
 .container {
   display: flex;

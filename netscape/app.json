@@ -1,0 +1,13 @@
+{
+    "pages":[
+        "pages/item1/widget",
+        "pages/item2/sheet"
+        ],
+    "window":{
+     "backgroundTextStyle":"dark",
+     "backgroundColor":"#4ac2d3",
+     "navigationBarBackgroundColor"  :"#4ac2d3",
+     "navigationBarTextStyle":"black",
+     "navigationBarTitleText":"张俊凯"
+     }
+}
