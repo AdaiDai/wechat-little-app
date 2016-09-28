@@ -1,27 +1,31 @@
 .index{
-    background-color: #FBF9FE;
+    /*backgrounds-color:yellow;*/
     font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
     flex: 1;
     min-height: 100%;
     font-size: 16px;
 }
+
 .head{
     padding: 40px;
 }
+.title{
+    font-size: 30px;
+    background-color:white;
+
+}
+.desc{
+    margin-top: 5px;
+    color: #b35c44;
+    font-size: 14px;
+    background-color:bisque;
+}
+
 .body{
     padding-left: 15px;
     padding-right: 15px;
     overflow: hidden;
-}
-.title{
-    font-size: 30px;
-    background-color:yellow;
-}
-.desc{
-    margin-top: 5px;
-    color: #888888;
-    font-size: 14px;
-    background-color:red;
+    /*background-color: red;*/
 }
 
 .widgets__item{
@@ -32,12 +36,14 @@
     border-radius: 2px;
     cursor: pointer;
 }
+
 .widgets__info{
     display: flex;
     padding: 20px;
     align-items: center;
     flex-direction: row;
 }
+
 .widgets__info_show{
     opacity: .4;
 }
@@ -55,24 +61,8 @@
 .widgets__list_show{
     display: block;
 }
-/*
-.widgets__list{
-    height: 0;
-    overflow: hidden;
-}
-.widgets__list_show{
-    height: auto;
-}
-.widgets__list-inner{
-    opacity: 0;
-    transform: translateY(-50%);
-    transition: .3s;
-}
-.widgets__list-inner_show{
-    opacity: 1;
-    transform: translateY(0);
-}
-*/
+
+/*被注释部分还未知作用*/
 
 .widget{
     position: relative;
@@ -81,6 +71,8 @@
     padding-left: 20px;
     padding-right: 20px;
 }
+
+/*图标设置*/
 .widget__arrow{
     position: absolute;
     top: 14px;
@@ -88,6 +80,8 @@
     width: 8px;
     height: 16px;
 }
+
+/*分割线*/
 .widget__line{
     content: " ";
     position: absolute;
@@ -97,3 +91,5 @@
     height: 1rpx;
     background-color: #DFDFDF;
 }
+
+

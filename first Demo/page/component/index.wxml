@@ -11,6 +11,7 @@
                     <text class="widgets__info-name">内容分区</text>
                     <image class="widgets__info-img" src="resources/kind/view.png" background-size="cover" />
                 </view>
+
                 <view class="widgets__list {{viewShow ? 'widgets__list_show' : ''}}">
                     <navigator url="component-pages/wx-view/wx-view" class="widget">
                         <text class="widget__name">view</text>
@@ -129,7 +130,6 @@
                     </navigator>
                 </view>
             </view>
-
             <view class="widgets__item">
                 <view id="nav" class="widgets__info {{navShow ? 'widgets__info_show' : ''}}" bindtap="widgetsToggle">
                     <text class="widgets__info-name">导航</text>
