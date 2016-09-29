@@ -1,0 +1,54 @@
+{
+    "pages":[
+        "pages/home/home",
+        "pages/amount/amount",
+        "pages/repay/repay",
+        "pages/me/me"
+        ],
+    "window":{
+     "backgroundTextStyle":"dark",
+     "backgroundColor":"#4ac2d3",
+     "navigationBarBackgroundColor":"rgb(249,99,39)" ,
+     "navigationBarTextStyle":"black"
+     
+     },
+     "tabBar":{
+         "color":"#000000",
+         "selectedColor":"rgb(248,139,23)",
+         "backgroundColor":"rgb(255,255,255)",
+         "borderStyle":"black",
+         "list":[
+             {
+                 "pagePath":"pages/home/home",
+                 "text":"首页",
+                 "iconPath":"images/tabBar/tab_home_default.png",
+                 "selectedIconPath":"images/tabBar/tab_home_selected.png"
+             },
+             {
+                 "pagePath":"pages/amount/amount",
+                 "text":"调额",
+                 "iconPath":"images/tabBar/tab_loan_default.png",
+                 "selectedIconPath":"images/tabBar/tab_loan_selected.png"
+             },
+             {
+                 "pagePath":"pages/repay/repay",
+                 "text":"还款",
+                 "iconPath":"images/tabBar/tab_refund_default.png",
+                 "selectedIconPath":"images/tabBar/tab_refund_selected.png"
+             },
+             {
+                 "pagePath":"pages/me/me",
+                 "text":"我",
+                 "iconPath":"images/tabBar/tab_me_default.png",
+                 "selectedIconPath":"images/tabBar/tab_me_selected.png"
+             }
+         ]
+     },
+     "networkTimeout":{
+         "request":"10000",
+         "connectSocket":"10000",
+         "uploadFile":"10000",
+         "downloadFile":"10000"
+     },
+     "debug":true
+}
