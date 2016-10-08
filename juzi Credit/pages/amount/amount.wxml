@@ -1,3 +1,6 @@
 <!--<view class="title">-->
 <!--<text>调额</text>-->
 <!--</view>-->
+<template name="item">
+  <text>{{text}}</text>
+</template>
