@@ -1,4 +1,11 @@
-<view class="title">
-<text>首页</text>
-</view>
-        
+<!--<view class="title">-->
+<!--<text>首页</text>-->
+<!--</view>-->
+
+<view> {{ message }} </view>
+
+<view id="item-{{id}}"> 这是idview</view>
+
+<view wx:if="{{condition}}">这是控制属性视图</view>
+
+
