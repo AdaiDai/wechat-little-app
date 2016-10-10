@@ -1,9 +1,13 @@
-.title{
-    text-align: center;
-    background-color:azure;
+.wrapView{
+    background-color: purple;
+    
 }
 
-.textTitle{
-    font-size: 30px;
-    
+
+.moto{
+    align-self: center;
+}
+
+.line{
+    background-color: rgb(244, 129, 24);
 }

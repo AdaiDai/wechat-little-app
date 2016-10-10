@@ -1,6 +1,7 @@
-<!--<view class="title">-->
-<!--<text>调额</text>-->
-<!--</view>-->
-<template name="item">
-  <text>{{text}}</text>
-</template>
+
+<view>
+
+<view class="moto">信用卡调额即将开放</view>
+<view class="line">下划线</view>
+
+</view>
