@@ -1,7 +1,7 @@
 
-<view>
+<view class="body">
 
-<view class="moto">信用卡调额即将开放</view>
-<view class="line">下划线</view>
+  <view class="moto">信用卡调额即将开放</view>
+  <view class="line">下划线</view>
 
 </view>

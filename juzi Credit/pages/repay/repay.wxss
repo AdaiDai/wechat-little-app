@@ -1,9 +1,0 @@
-.title{
-    text-align: center;
-    background-color:azure;
-}
-
-.textTitle{
-    font-size: 30px;
-    
-}
