@@ -1,10 +1,10 @@
 <view class="content">
     <view class="today">
       <view class="info">
-        <view class="temp">25℃</view>
-        <view class="weather">大暴雨 西风 糊了</view>
-        <view class="">友情提示，今天打麻将胜率会高</view>
-        <view class="city">杭州</view>
+        <view class="temp">{{today.wendu}}℃</view>
+        <view class="weather">{{today.todayInfo.type}}{{today.todayInfo.fengxiang}}{{today.todayInfo.fengli}}</view>
+        <view class="">友情提示{{today.ganmao}}</view>
+        <view class="city">{{city}}</view>
       </view>
 
     </view>
