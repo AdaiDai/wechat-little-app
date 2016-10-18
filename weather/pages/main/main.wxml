@@ -9,6 +9,24 @@
 
     </view>
 
-    <view class="future">
-    </view>
+    <!--未来几天的天气布局-->
+    <!--<view class="future">
+
+        <block wx:for="{{future}}">
+           <view class="future-item">11</view>
+        </block>
+
+    </view>-->
+<import src="../template/template"/>
+
+<view class="future">
+
+        <block wx:for="{{future}}">
+           <template is="future-item" data="{{item}}"/>
+           <!--<view class="future-item">12321321321313123</view>-->
+        </block>
+
+</view>
+
+
 </view>
