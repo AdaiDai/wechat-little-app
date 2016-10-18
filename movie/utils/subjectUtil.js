@@ -1,7 +1,16 @@
+  //取出电影数组中每一个元素
 
 
-  //第二层处理电影元素 
+function processSubjects(subjects){
+  for(var i=0; i<subjects.length;i++){
+        var subject = subjects[i];
+       this.processSubect(subject);
+    }
+}
+
+//第二层处理电影元素 
 function processSubect(subject){
+
   var title = subject.title;
   var directors = subject.directors;
   var directorStr = "";
@@ -37,20 +46,11 @@ function processSubect(subject){
   var text = "名称：" + title+"\n导演："+directorStr+"\n主演："+castStr+"\n类型："+genresStr + "\n上映年份："+year
   // console.log(text);
   subject.text = text;
-
 }
 
+  
 
-  //取出电影数组中每一个元素
-function processSubjects(subjects){
-    for(var i=0; i<subjects.length;i++){
-        var subject = subjects[i];
-       this.processSubect(subject);
-    }
-  }
 
-module.exports = {
+module.exports.processSubjects = processSubjects
 
-  processSubect:processSubect,
-  processSubects:processSubects
-}
+exports.processSubect = processSubect

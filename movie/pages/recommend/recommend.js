@@ -1,6 +1,5 @@
 var subjectUtil = require ('../../utils/subjectUtil.js');
 
-
 Page({
   data:{
     // text:"这是一个页面"
@@ -42,6 +41,5 @@ Page({
   })
 
  }
-
 
 })
