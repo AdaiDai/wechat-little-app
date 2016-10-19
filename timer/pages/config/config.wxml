@@ -1,0 +1,108 @@
+<view>
+  
+  <!--区域-->
+  <view  class="section-title">
+  立论阶段 <switch class="pull-right" checked bindchange="switchChange"/>
+  </view>
+  
+  <view class="hr"></view>
+  
+  <view>
+    <text>时间限制(秒)</text>
+    <slider bindchange="slider3change" show-value min="10" max="200" />
+  </view>
+
+  <view>
+    <text>声音提醒</text>
+        <radio-group class="voice" bindchange="radioChange">
+        <label><radio value="15" checked/>提前15秒</label>
+        <label><radio value="10" />提前10秒</label>
+        <label><radio value="5" />提前5秒</label>
+        </radio-group>
+  </view>
+
+    <!--区域-->
+  <view  class="section-title">
+  驳立论 <switch class="pull-right" checked bindchange="switchChange"/>
+  </view>
+  
+  <view class="hr"></view>
+ 
+  <view>
+    <text>时间限制(秒)</text>
+    <slider bindchange="slider3change" show-value min="10" max="200" />
+  </view>
+
+  <view>
+    <text>声音提醒</text>
+        <radio-group class="voice" bindchange="radioChange">
+        <label><radio value="15" checked/>提前15秒</label>
+        <label><radio value="10" />提前10秒</label>
+        <label><radio value="5" />提前5秒</label>
+        </radio-group>
+  </view>
+
+    <!--区域-->
+  <view  class="section-title">
+  质辩 <switch class="pull-right" checked bindchange="switchChange"/>
+  </view>
+  
+  <view class="hr"></view>
+ 
+  <view>
+    <text>时间限制(秒)</text>
+    <slider bindchange="slider3change" show-value min="10" max="200" />
+  </view>
+
+  <view>
+    <text>声音提醒</text>
+        <radio-group class="voice" bindchange="radioChange">
+        <label><radio value="15" checked/>提前15秒</label>
+        <label><radio value="10" />提前10秒</label>
+        <label><radio value="5" />提前5秒</label>
+        </radio-group>
+  </view>
+
+    <!--区域-->
+  <view  class="section-title">
+  自由答辩 <switch class="pull-right" checked bindchange="switchChange"/>
+  </view>
+  
+  <view class="hr"></view>
+  
+  <view>
+    <text>时间限制(秒)</text>
+    <slider bindchange="slider3change" show-value min="10" max="200" />
+  </view>
+
+  <view>
+    <text>声音提醒</text>
+        <radio-group class="voice" bindchange="radioChange">
+        <label><radio value="15" checked/>提前15秒</label>
+        <label><radio value="10" />提前10秒</label>
+        <label><radio value="5" />提前5秒</label>
+        </radio-group>
+  </view>
+
+    <!--区域-->
+  <view  class="section-title">
+  总结陈词 <switch class="pull-right" checked bindchange="switchChange"/>
+  </view>
+  
+  <view class="hr"></view>
+  
+  <view>
+    <text>时间限制(秒)</text>
+    <slider bindchange="slider3change" show-value min="10" max="200" />
+  </view>
+
+  <view>
+    <text>声音提醒</text>
+        <radio-group class="voice" bindchange="radioChange">
+        <label><radio value="15" checked/>提前15秒</label>
+        <label><radio value="10" />提前10秒</label>
+        <label><radio value="5" />提前5秒</label>
+        </radio-group>
+  </view>
+
+</view>
