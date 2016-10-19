@@ -34,7 +34,7 @@ detail:function(e){
   //console.log(e.currentTarget.id);
  wx.setStorageSync("movieId",e.currentTarget.id);
   wx.navigateTo({
-    url:"../detai/detail"
+    url:'../new/new?id='+ e.currentTarget.id
   })
 }
 })

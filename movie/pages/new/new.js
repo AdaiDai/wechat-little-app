@@ -3,11 +3,12 @@ var subjectUtil = require('../../utils/subjectUtil.js');
 Page({
   data:{
     // text:"这是一个页面"
+    movie:{}
   },
   onLoad:function(options){
     // 页面初始化 options为页面跳转所带来的参数
+    console.log(options);
     this.loadMovie();
-
   },
   onReady:function(){
     // 页面渲染完成
@@ -21,6 +22,9 @@ Page({
   onUnload:function(){
     // 页面关闭
   },
+  add:function(e){
+      console.log(e);
+  },
   //加载电影
  loadMovie:function(){
   var page = this;
@@ -33,6 +37,7 @@ Page({
     },
     success:function(res){
       var subject = res.data;
+      // console.log(subject);
       subjectUtil.processSubject(subject);
       page.setData({movie:subject});
     }
@@ -40,5 +45,4 @@ Page({
   })
 
  }
-
 })

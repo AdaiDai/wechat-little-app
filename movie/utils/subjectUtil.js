@@ -4,12 +4,12 @@
 function processSubjects(subjects){
   for(var i=0; i<subjects.length;i++){
         var subject = subjects[i];
-       this.processSubect(subject);
+       this.processSubject(subject);
     }
 }
 
 //第二层处理电影元素 
-function processSubect(subject){
+function processSubject(subject){
 
   var title = subject.title;
   var directors = subject.directors;
@@ -50,7 +50,8 @@ function processSubect(subject){
 
   
 
-
+//这里只能暴露一个方法
 module.exports.processSubjects = processSubjects
 
-exports.processSubect = processSubect
+exports.processSubject = processSubject
+

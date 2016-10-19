@@ -2,7 +2,8 @@
   "pages":[
     "pages/movie/movie",
     "pages/recommend/recommend",
-    "pages/search/search"
+    "pages/search/search",
+    "pages/new/new"
    
   ],
   "window":{
