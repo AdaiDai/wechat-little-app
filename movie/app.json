@@ -1,8 +1,9 @@
 {
   "pages":[
     "pages/movie/movie",
-    "pages/recommend/recommend"
-  
+    "pages/recommend/recommend",
+    "pages/search/search"
+   
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -29,7 +30,7 @@
                  "selectedIconPath":"assets/img/tj.png"
              },
              {
-                 "pagePath":"pages/movie/movie",
+                 "pagePath":"pages/search/search",
                  "text":"查询电影",
                  "iconPath":"assets/img/search-1.png",
                  "selectedIconPath":"assets/img/search.png"

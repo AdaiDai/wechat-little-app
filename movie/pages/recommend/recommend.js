@@ -40,6 +40,10 @@ Page({
 
   })
 
+ },
+
+  detail:function(e){
+   getApp().detail(e)
  }
 
 })

@@ -26,5 +26,15 @@ App({
   },
   globalData:{
     userInfo:null
-  }
+  },
+
+  //点击电影进入相信界面
+detail:function(e){
+  //先把电影的ID缓存起来
+  //console.log(e.currentTarget.id);
+ wx.setStorageSync("movieId",e.currentTarget.id);
+  wx.navigateTo({
+    url:"../detai/detail"
+  })
+}
 })
