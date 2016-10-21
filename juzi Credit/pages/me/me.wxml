@@ -1,3 +1,5 @@
-<view class="title">
-<text>我的</text>
-</view>
+<navigator url="component-pages/wx-view/wx-view" class="widget">
+                        <text class="widget__name">view</text>
+                        <image class="widget__arrow" src="resources/arrow.png" background-size="cover" />
+                        <view class="widget__line"></view>
+                    </navigator>
