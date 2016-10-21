@@ -157,7 +157,6 @@ Page({
          page.rightStop();
          return;
        }
-
               //判断时间
               if(page.data.rightTime <= page.data.voice){
                page.audioPlay();

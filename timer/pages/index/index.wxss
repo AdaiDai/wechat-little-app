@@ -23,8 +23,6 @@ page{
     height: 150px;
     position: absolute;
     border-radius: 50%;
-    
-
 }
 
 .time{

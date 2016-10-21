@@ -1,83 +1,53 @@
-.container {
+page{
+  background-color: rgb(241, 145, 89);
+}
+
+
+.time{
+    height: 100%;
+    text-align: center;
+ background: purple;
+    
+}
+
+.big-circle{
+    width: 430rpx;
+    height: 430rpx;
+    border-radius: 50%;
+    background: rgb(179, 167, 157);
+   
+    margin-top:160rpx; 
+    position: absolute;
+    margin-left: 160rpx;
+
+    text-align: center;
+}
+
+.date{
+  width: 430rpx;
+  height: 100rpx;
+  margin-top:165rpx;
   display: flex;
-  height: 100%;
   flex-direction: column;
-  overflow: hidden;
-  background-color: #fff;
-}
-
-.timer_main {
-  position: relative;
-  display: flex;
-  flex: 2;
-  justify-content: center;
-  align-items: center;
-  margin-top: -45px;
-  text-align: center;
-  background-color: #ffa400;
-  transition: all .5s;
-  z-index: 1;
-}
-
-
-.timer_time-wrap {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 150px;
-  height: 150px;
-  text-align: center;
-  transition: all .3s;
-}
-
-.timer_left {
-  left: 0;
-}
-
-.timer_right {
-  right: 0;
-}
-
-.timer_circle {
+  color: white;
   position: absolute;
-  top: 0;
-  width: 150px;
-  height: 150px;
-  border: 3px solid transparent;
-  border-radius: 50%;
-  transition: all .3s;
-}
-
-.timer_circle--left {
-  left: 0;
-  border-left: 3px solid #fff;
-  border-bottom: 3px solid #fff;
-  transform: rotate(45deg);
-}
-
-.timer_circle--right {
-  right: 0;
-  border-right: 3px solid #fff;
-  border-bottom: 3px solid #fff;
-  transform: rotate(-45deg);
-}
-
-.button{
-  top: 80px;
-}
-
-/*分数*/
-.text-bounds{
-  text-align: center;
-  color: white;
-  float: right;
 
 }
 
-/*评估日期*/
-.text-date{
-  text-align: center;
-  color: white;
+.middleCircle{
 
+    width: 400rpx;
+    height: 400rpx;
+    border-radius: 50%;
+    background: rgb(241, 145, 89);
+
+    margin-top:15rpx; 
+    position: absolute;
+    margin-left: 15rpx;
 }
+
+/*按钮布局*/
+button{
+  margin-top:800rpx;
+}
+
