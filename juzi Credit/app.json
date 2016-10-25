@@ -1,18 +1,24 @@
 {
     "pages":[
-        "pages/detail/message/message",
+        "pages/detail/question/question",
         "pages/home/home",
         "pages/amount/amount",
         "pages/repay/repay",
-        "pages/me/me"
-        ],
-    "window":{
+        "pages/me/me",
+        "pages/detail/aboutUs/aboutUs",
+        "pages/detail/message/message",
+        
+        "pages/detail/schedule/schedule",
+        "pages/detail/userInfo/userInfo"
+],
+"window":{
      "backgroundTextStyle":"dark",
      "backgroundColor":"#4ac2d3",
      "navigationBarBackgroundColor":"rgb(249,99,39)" ,
      "navigationBarTextStyle":"black",
      "navigationBarTitleText": "桔子信用"
      },
+    
      "tabBar":{
          "color":"#000000",
          "selectedColor":"white",
