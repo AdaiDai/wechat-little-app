@@ -32,5 +32,11 @@ Page({
     this.setData({
       scrollTop: this.data.scrollTop + 10
     })
+  },
+  leftScroll:function(){
+    console.log("leftScroll");
+  },
+  rightScroll:function(){
+    console.log("rightScroll");
   }
 })
