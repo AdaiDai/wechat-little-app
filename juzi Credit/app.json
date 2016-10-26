@@ -1,15 +1,22 @@
 {
     "pages":[
-        "pages/detail/question/question",
+        "pages/detail/aboutUs/aboutUs",
         "pages/home/home",
         "pages/amount/amount",
         "pages/repay/repay",
         "pages/me/me",
-        "pages/detail/aboutUs/aboutUs",
-        "pages/detail/message/message",
         
+        "pages/detail/message/message",
+        "pages/detail/question/question",
         "pages/detail/schedule/schedule",
-        "pages/detail/userInfo/userInfo"
+        "pages/detail/userInfo/userInfo",
+        "pages/detail/aboutUs/aboutUs",
+
+        "pages/detail/aboutUs/aboutExtent/edition/edition",
+        "pages/detail/aboutUs/aboutExtent/opition/opition",
+        "pages/detail/aboutUs/aboutExtent/policy/policy"
+
+
 ],
 "window":{
      "backgroundTextStyle":"dark",

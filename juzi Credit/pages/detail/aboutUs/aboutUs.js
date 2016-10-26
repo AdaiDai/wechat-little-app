@@ -1,7 +1,22 @@
 Page({
   data:{
     // text:"这是一个页面"
-  },
+    titles : [
+                {
+                  title:"版本说明",
+                  url:"aboutExtent/edition/edition"
+                },
+                {
+                  title:"反馈意见",
+                  url:"aboutExtent/opition/opition"
+                },
+                {
+                  title:"桔子信用隐私权政策",
+                  url:"aboutExtent/policy/policy"
+                }
+              
+              ]
+  },//end for data
   onLoad:function(options){
     // 页面初始化 options为页面跳转所带来的参数
   },
