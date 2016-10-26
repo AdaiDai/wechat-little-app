@@ -1,17 +1,17 @@
 
-.menu-list {
+.help-list {
   display: flex;
   flex-direction: column;
   background-color: rgb(230, 230, 230);
 }
-.menu-item {
+.help-item {
   color: #000000;
   display: flex;
   background-color: #fff;
   margin: 10rpx 40rpx;
   flex-direction: column;
 }
-.menu-item-main {
+.help-item-main {
   display: flex;
   height: 100rpx;
   padding: 20rpx;
@@ -20,53 +20,53 @@
   font-size: 32rpx;
   justify-content: space-between;
 }
-.menu-item-arrow {
+.help-item-arrow {
   width: 32rpx;
   height: 32rpx;
   transition: 400ms;
 }
-.menu-item-arrow.open {
+.help-item-arrow.open {
   transform: rotate(-90deg);
 }
-.menu-item-arrow.close {
+.help-item-arrow.close {
   transform: rotate(90deg);
 }
-.menu-item-arrow.url {
+.help-item-arrow.url {
   transform: rotate(0deg);
 }
 
-.menu-item-api-list {
+.help-item-api-list {
   transition: 200ms;
   height: auto;
   border-top: 1px solid #d8d8d8;
 }
-.menu-item-api-list.close {
+.help-item-api-list.close {
   display: none;
   height: 0;
 }
-.menu-item-api-item {
+.help-item-api-item {
   display: flex;
   justify-content: space-between;
-  height: 80rpx;
+  height: 350rpx;
   padding: 20rpx 20rpx 20rpx 0;
   margin-left: 20rpx;
   align-items: center;
   border-top: 1px solid #f0f0f0;
 }
-.menu-item-api-item-text {
+.help-item-api-item-text {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
 }
-.menu-item-api-item-text-zhname {
+.help-item-api-item-text-zhname {
   font-size: 30rpx;
 }
-.menu-item-api-item-text-enname {
+.help-item-api-item-text-enname {
   font-size: 26rpx;
   color: #6b6b6b;
 }
-.menu-item-api-item-arrow {
+.help-item-api-item-arrow {
   width: 32rpx;
   height: 32rpx;
 }

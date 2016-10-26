@@ -132,6 +132,7 @@ Page({
 
       changeData['menuList[' + e.currentTarget.id + '].opened'] = !opened
       this.setData(changeData)
+      console.log(changeData)
     }
   }
 })
