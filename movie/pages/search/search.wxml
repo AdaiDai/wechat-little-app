@@ -4,7 +4,7 @@
                 <button bindtap="search" hover-class="btnClick">查询</button>
         </view>
 
-        <text class="inoutShow">你要搜索：{{inputVal}}</text>
+        <text class="inoutShow">你要搜索: {{inputVal}}</text>
 
  
  <!--列表内容-->

@@ -111,13 +111,7 @@ Page({
       //   method: 'POST',
       //   url: 'http://mobile.yuyanzhe.me/app/help.json',
       //   data: {
-      //   versionName : '1.1',
-      //   device : '0',
-      //   mac : 'F45C899F38F7',
-      //   mobileCode : 'f8c3458cb9ed4c6ab15adbb29e1eab2f',
-      //   version : '2',
-      //   type : 'jvzhi',
-      //   license :'5808896ae4b0d8009b7db789'
+      //   
       //   },
       //   header: {
       //       'Content-Type': 'application/json'
