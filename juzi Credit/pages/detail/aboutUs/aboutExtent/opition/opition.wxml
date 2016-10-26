@@ -5,6 +5,6 @@
   
   
   <view class="btn-area">
-    <button bindtap="bindButtonTap" type="primary" size="default">提交</button>
+    <button bindtap="bindButtonTap" type="primary" size="default" form-type="submit">提交</button>
   </view>
 </view>
