@@ -16,8 +16,17 @@
 .page__hd{
     display: flex;
     justify-content: space-between;
+    height: 50rpx;  
     
 }
+
+
+.page__title{
+  
+  width: 100%;  
+  text-align: center;
+}
+
 
 
 

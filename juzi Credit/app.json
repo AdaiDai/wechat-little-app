@@ -1,6 +1,8 @@
 {
     "pages":[
-        "pages/detail/aboutUs/aboutUs",
+        
+
+
         "pages/home/home",
         "pages/amount/amount",
         "pages/repay/repay",
