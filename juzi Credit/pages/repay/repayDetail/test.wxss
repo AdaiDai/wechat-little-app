@@ -2,81 +2,12 @@ page{
     background: rgb(230, 230, 230);
 }
 
-.container{
-    
-}
-/*第一部分设置*/
-.sectionOne{
-    background: white;
-    text-align: center;
-    display: flex;
-    flex-flow:column; 
-    height: 100rpx;
-}
-
-.textView{
-    font-size: 15px;
-    margin-bottom: 10px;
-    margin-top: 5px;
-}
-
-.textView__number{
-    color: red;
-    font-size: 14px;
-}
-
-/*第二部分设置*/
-.sectionTwo{
-
-    margin-top: 50rpx;
-    background: white;
-    height: 300rpx;
-
-}
-
-/*分隔线*/
-.hr{
-    height: 1px;
-    background: rgb(230, 230, 230);
-}
-
-
-.item-container{
-    height: 80rpx;
-    background: white;
-    display: flex;
-    justify-content: space-between;
-    padding: 20rpx 20rpx 20rpx 0;
-    align-items: center;
-
-}
-/*文字样式*/
-.item-title{
-    color: rgb(188, 188, 188);
-    font-size: 30rpx;
-    margin-left: 20rpx;
-}
-/*箭头样式*/
-.item-detail{
-    color: rgb(200, 200, 200);
-    font-size: 30rpx;
-    margin-right: 20rpx;
-}
-
-
-/*第三部分设置*/
-.sectionThree{
-
-    margin-top: 100rpx;
-    
-
-}
-
 /*横幅样式*/
 .menu{
   color: #000000;
   display: flex;
   background-color: white;
+  margin: 10rpx 40rpx;
   flex-direction: column;
 }
 
@@ -116,6 +47,7 @@ page{
   height: auto;
   border-top: 1px solid rgb(228, 228, 228);
   
+
 }
 
 /*收起*/
@@ -137,6 +69,4 @@ page{
 .menu-item-content {
   font-size: 30rpx;
 }
-
-
 

@@ -1,8 +1,8 @@
 {
     "pages":[
         
-  "pages/repay/repayDetail/repayDetail",
-
+  
+"pages/repay/repayDetail/repayDetail",
 
         "pages/home/home",
         "pages/amount/amount",
@@ -19,7 +19,8 @@
         "pages/detail/aboutUs/aboutExtent/opition/opition",
         "pages/detail/aboutUs/aboutExtent/policy/policy",
 
-        "pages/repay/repayDetail/repayDetail"
+        "pages/repay/repayDetail/repayDetail",
+        "pages/repay/repayDetail/test"
     
 
 
