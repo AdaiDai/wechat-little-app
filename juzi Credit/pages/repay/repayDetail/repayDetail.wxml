@@ -42,6 +42,8 @@
                               <!--左边的日期-->
                               <text class="menu-item-content">{{dateItem.date}} </text>
                               
+                              <!--中间的进度条-->
+                              <progress percent="90" color="#16A11A" show-info="false" stroke-width="40" active="false"/>
                               <!--右边的金额-->
                               <text class="menu-item-content">{{dateItem.amount}}</text>
 

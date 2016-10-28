@@ -5,10 +5,10 @@ page{
 /*横幅样式*/
 .menu{
   color: #000000;
-  display: flex;
+ 
   background-color: white;
   margin: 10rpx 40rpx;
-  flex-direction: column;
+  
 }
 
 /*横幅内标题图片布局*/

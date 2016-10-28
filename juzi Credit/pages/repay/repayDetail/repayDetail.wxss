@@ -14,12 +14,14 @@ page{
     height: 100rpx;
 }
 
+/*第一部分文字*/
 .textView{
     font-size: 15px;
     margin-bottom: 10px;
     margin-top: 5px;
 }
 
+/*第一部分数字*/
 .textView__number{
     color: red;
     font-size: 14px;
@@ -75,16 +77,15 @@ page{
 /*横幅样式*/
 .menu{
   color: #000000;
-  display: flex;
   background-color: white;
-  flex-direction: column;
+  
 }
 
 /*横幅内标题图片布局*/
 .menu-main {
   display: flex;
   height: 100rpx;
-  padding: 20rpx;
+  padding: 30rpx;
   border-radius: 10rpx;
   align-items: center;
   font-size: 32rpx;
@@ -136,6 +137,11 @@ page{
 }
 .menu-item-content {
   font-size: 30rpx;
+}
+
+/*进度条*/
+progress{
+  width: 60%;
 }
 
 
