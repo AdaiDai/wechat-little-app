@@ -34,7 +34,7 @@
        <!--分隔线-->
        <view class="hr"></view>
        
-       <navigator class="tapTwo">
+       <navigator class="tapTwo" url="repayDetail/repayDetail">
        
          <text class="widget__name">用户名</text>
          <image class="widget__arrow" src="../../images/arrowright.png" background-size="cover" />
@@ -42,7 +42,6 @@
        </navigator>
        
        
-      
      
      
      </view>

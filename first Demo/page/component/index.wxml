@@ -5,7 +5,7 @@
     </view>
 
     <view class="body">
-        <view class="widgets">
+        <!--<view class="widgets">-->
             <view class="widgets__item">
                 <view id="view" class="widgets__info {{viewShow ? 'widgets__info_show' : ''}}" bindtap="widgetsToggle">
                     <text class="widgets__info-name">内容分区</text>
@@ -166,6 +166,6 @@
                     </view>
                 </view>
             </view>
-        </view>
+        <!--</view>-->
     </view>
 </view>

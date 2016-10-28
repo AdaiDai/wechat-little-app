@@ -1,0 +1,30 @@
+<view class="container">
+
+    <view class="sectionOne">
+      <view class="textView">贷款总额(元)</view> 
+      <view class="textView__number">10300.0</view>
+    </view>  <!--sectionOne-->
+    
+    
+    <view class="sectionTwo">
+       
+       <block wx:for-items="{{info}}" wx:for-item="item">
+      
+                 <view class="item-container">
+                      <text class="item-title">{{item.title}}</text>
+                      <text class="item-detail">{{item.detail}}</text>
+                </view>
+                <!--分割线-->
+                <view class="hr"></view>
+   
+       </block>
+
+
+    </view>  <!--sectionTwo-->
+    
+    
+    <view class="sectionThree">
+    
+    </view>  <!--sectionThree-->
+
+</view>
