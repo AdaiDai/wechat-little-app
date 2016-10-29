@@ -18,6 +18,17 @@ Page({
     // 页面关闭
   },
   btnClick:function(e){
-    console.log(e);
+    wx.navigateTo({
+      url: 'update',
+      success: function(res){
+        // success
+      },
+      fail: function() {
+        // fail
+      },
+      complete: function() {
+        // complete
+      }
+    })
   }
 })

@@ -1,9 +1,10 @@
 {
     "pages":[
         
-  
+  "pages/home/update",
 
         "pages/home/home",
+        "pages/home/update",
         "pages/amount/amount",
         "pages/repay/repay",
         "pages/me/me",
