@@ -10,19 +10,7 @@
       
         <!--下来收缩的部分-->
         <view class="menu-list {{opened ? 'open' : 'close'}}">
-            <block wx:for-items="{{dateList}}" wx:for-item="dateItem">
-              
-                <view class="menu-item">
-                      
-                      <!--左边的日期-->
-                      <text class="menu-item-content">{{dateItem.date}} </text>
-                      
-                      <!--右边的金额-->
-                      <text class="menu-item-content">{{dateItem.amount}}</text>
-
-                </view>
-              
-            </block>
+            c
         </view>
   </view>
    

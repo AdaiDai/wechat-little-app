@@ -1,4 +1,4 @@
-var order = ['red', 'yellow', 'blue', 'green', 'red']
+var order = ['red', 'yellow', 'blue']
 
 
 Page({
@@ -19,8 +19,10 @@ Page({
 
     ],
     toView: 'red',//指定滚动到某个视图
-    scrollTop: 200  //设置偏移量
+    scrollLeft: 0  //设置偏移量
   },
+
+  //加载参数 设置名字
   onLoad:function(options){
     // 页面初始化 options为页面跳转所带来的参数
     wx.setNavigationBarTitle({
@@ -30,22 +32,7 @@ Page({
       }
     })
   },
-  onReady:function(){
-    // 页面渲染完成
-    
-  },
-  onShow:function(){
-    // 页面显示
-    
-  },
-  onHide:function(){
-    // 页面隐藏
-    
-  },
-  onUnload:function(){
-    // 页面关闭
-    
-  },
+ 
 
 //滚动到最左边触发
   left: function(e) {
@@ -58,11 +45,20 @@ Page({
 
   //滚动时触发
   scroll: function(e) {
-    console.log(e)
+    //  console.log(e.detail)
+    var scrollWidth = e.detail.scrollWidth;
+    var length = this.data.titles.length;
+    var  width = scrollWidth / length;
+    var leftWidth = e.detail.scrollLeft;
+     var index = Math.round(leftWidth / width);
+    this.tapMove(index,width)
+    
+    
   },
 
 
-  tap: function(e) {
+//老的按钮留下来的方法
+  tap: function(index) {
     for (var i = 0; i < order.length; ++i) {
       if (order[i] === this.data.toView) {
         this.setData({
@@ -72,9 +68,22 @@ Page({
       }
     }
   },
-  tapMove: function(e) {
+  
+  
+  tapMove: function(index,width) {
+  
+  console.log(index);
     this.setData({
-      scrollTop: this.data.scrollTop + 10
-    })
+              toView: order[index],
+              scrollLeft: index * width
+
+            })
+
+    // this.setData({
+    //   scrollLeft: this.data.scrollLeft + 9
+    //   // scrollLeft: 100
+    // })
+
+    // console.log(this.data.scrollLeft);
   }
 })
