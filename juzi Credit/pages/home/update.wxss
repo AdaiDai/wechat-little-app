@@ -33,7 +33,7 @@ page{
 
 
 .scroll-view{
-    background: red;
+    background: rgb(230, 230, 230);
      white-space: nowrap;
      height: 100%;
  }
@@ -103,7 +103,7 @@ page{
 
 .body-middle{
     
-    width: 90%;
+    width: 100%;
     height: 70px;
     text-align: center;
 
@@ -114,17 +114,29 @@ page{
 .body-middle-text{
    white-space:pre-wrap;
    text-align: center;
-   background: red;
+   
 }
 /*下部bottom*/
 .body-bottom{
    height: 10%;
    font-size: 15px;
-   background: blue;
+   
+
+   position: relative;
+
 }
 
-checkbox{
-    margin-left: 5px;
+.body-bottom-container{
+    
+  transform:translate(-50%,-50%);
+    position: absolute;
+    top: 50%;
+    left:50%;
+}
+
+
+.checkboxText{
+    margin-left: 10px;
 }
 
 /*支付宝排版*/
@@ -132,3 +144,24 @@ checkbox{
     width: 160px;
     height:60px;
 }
+
+/*芝麻信用排版 padding-left: 30%; */
+.body-top-blue{
+    color: rgb(230, 127, 52);
+    font-size: 30px;
+    
+    width: 100%;
+    height: 30%;
+    position: relative;
+    
+}
+
+.blue-icon{
+    width: 160px;
+    height:60px;
+    transform:translate(-50%,-50%);
+    position: absolute;
+    top: 50%;
+    left:50%;
+}
+

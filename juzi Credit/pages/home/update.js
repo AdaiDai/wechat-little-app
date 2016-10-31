@@ -3,10 +3,12 @@ var order = ['red', 'yellow', 'blue']
 
 Page({
   data:{
+    
     titles:[
       {
         title:'通讯录',
-        url:'../../images/update/tongxunlu_default.png'
+        url:'../../images/update/tongxunlu_select.png',
+        
       },
       {
         title:'支付宝',
@@ -35,7 +37,7 @@ Page({
     
     },
     seasameInfo:{ 
-            intro:'同意《芝麻信用信息授权协议》',
+            intro:'绑定芝麻信用您的信用将得到全面的评估',
             value: '同意《芝麻信用信息授权协议》',
             checked : true
             
@@ -57,12 +59,42 @@ Page({
 
 //滚动到最左边触发
   left: function(e) {
-    console.log(e)
+    //让绑定通讯点亮 另外两个点黑
+   var url= '../../images/update/tongxunlu_default.png';
+   var titles = this.data.titles;
+   titles[0].url = '../../images/update/tongxunlu_select.png';
+   titles[1].url = '../../images/update/zhifubao_default.png';
+   titles[2].url = '../../images/update/zhimaxinyong_default.png';
+
+   this.setData({
+     titles : titles
+   })
+  },
+
+ //滚动到中间触发
+  middle: function(e) {
+    //让绑定芝麻点亮
+   var titles = this.data.titles;
+   titles[0].url = '../../images/update/tongxunlu_default.png';
+   titles[1].url = '../../images/update/zhifubao_select.png';
+   titles[2].url = '../../images/update/zhimaxinyong_default.png';
+   this.setData({
+     titles : titles
+   })
 
   },
+
   //滚动到最右边触发
   right: function(e) {
-    console.log(e)
+    //让绑定芝麻点亮
+   var titles = this.data.titles;
+   titles[0].url = '../../images/update/tongxunlu_default.png';
+   titles[1].url = '../../images/update/zhifubao_default.png';
+   titles[2].url = '../../images/update/zhimaxinyong_select.png';
+   this.setData({
+     titles : titles
+   })
+
   },
 
   //滚动时触发
@@ -96,6 +128,17 @@ Page({
   tapMove: function(index,width) {
   
   console.log(index,width);
+          switch(index)
+        {
+        case 0:
+          this.left();
+          break;
+        case 1:
+          this.middle();
+          break;
+        default:
+          this.right();
+        }
 
     this.setData({
               toView: order[index],

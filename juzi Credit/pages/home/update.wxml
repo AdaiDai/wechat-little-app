@@ -25,8 +25,7 @@
  <scroll-view   class="scroll-view" 
                 scroll-x="true" 
                 style="width:100%" 
-                bindscrolltoupper="left" 
-                bindscrolltolower="right" 
+            
                 bindscroll="scroll" 
                 scroll-into-view="{{toView}}" 
                 scroll-left="{{scrollLeft}}">
@@ -55,11 +54,13 @@
                     <!--同意通讯录-->
                     <view class="body-bottom">
                         <!--左边一个checkbox，右边一个横幅-->
-                        
+                        <view class="body-bottom-container"> 
                           <checkbox-group bindchange="checkboxOne">
-                            <checkbox checked="{{!contactInfo.checked}}"/>      {{contactInfo.value}}
+                            <checkbox checked="{{!contactInfo.checked}}"/>   
                           </checkbox-group>
-                        
+                      
+                          <text class="checkboxText">{{contactInfo.value}}</text>  
+                        </view>
                     </view>
 
                     <!--绑定按钮-->
@@ -101,16 +102,17 @@
                       <!--同意通讯录-->
                       <view class="body-bottom">
                           <!--左边一个checkbox，右边一个横幅-->
-                          
+                          <view class="body-bottom-container">
                             <checkbox-group bindchange="checkboxTwo">
-                              <checkbox checked="{{!alipayInfo.checked}}"/>      {{contactInfo.value}}
+                              <checkbox checked="{{!alipayInfo.checked}}"/>
                             </checkbox-group>
-                          
+                            <text class="checkboxText">{{alipayInfo.value}}</text> 
+                          </view>
                       </view>
 
                       <!--绑定按钮-->
                       
-                      <button type="warn" bindtap="bindAlipay" disabled="{{alipayInfo.checked}}">绑定授权</button>
+                      <button type="warn" bindtap="bindAlipay" disabled="{{alipayInfo.checked}}">绑定支付宝</button>
 
                                 
                   </view>
@@ -128,14 +130,13 @@
             <view class="red-title">芝麻信用绑定</view>
             <!-- 第二道横线-->
             <view class="hr"></view>
-
-                  <!--下面body区域-->
+                <!--下面body区域-->
                 <view class="body-body">
-                
-                    <view class="body-top">
-                      <image class="yellow-icon" src="../../images/update/icon_zhimaxinyong.png" />
-                      
+                    
+                    <view class="body-top-blue">
+                      <image class="blue-icon" src="../../images/update/icon_zhimaxinyong.png" />
                     </view>  
+                    
                     
                     <!--说明信息-->
                     <view class="body-middle">
@@ -145,11 +146,12 @@
                     <!--同意通讯录-->
                     <view class="body-bottom">
                         <!--左边一个checkbox，右边一个横幅-->
-                        
+                        <view class="body-bottom-container">
                           <checkbox-group bindchange="checkboxThree">
-                            <checkbox checked="{{!seasameInfo.checked}}"/>      {{seasameInfo.value}}
+                            <checkbox checked="{{!seasameInfo.checked}}"/>
                           </checkbox-group>
-                        
+                          <text class="checkboxText">{{seasameInfo.value}}</text> 
+                        </view>
                     </view>
 
                     <!--绑定按钮-->
@@ -158,6 +160,7 @@
                     <!--  {{seasameInfo.checked}} -->
                   
                 </view>
+                 
 
            
 
