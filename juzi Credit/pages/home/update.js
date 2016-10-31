@@ -20,13 +20,26 @@ Page({
     ],
     toView: 'red',//指定滚动到某个视图
     scrollLeft: 0,  //设置偏移量
-    intro:'绑定通讯录您的信用将得到全面的评估!\n请进入设置 - 隐私 - 通讯录 - 桔子信用\n打开权限',
+    
 
     contactInfo:{ 
+           intro:'绑定通讯录您的信用将得到全面的评估!\n请进入设置 - 隐私 - 通讯录 - 桔子信用\n打开权限',
            value: '同意《通讯录授权协议》',
            checked : true
            
-           }
+           },
+    alipayInfo:{ 
+            intro:'绑定支付宝您的信用将得到全面的评估!',
+            value: '同意《支付宝信息授权协议》',
+            checked : true
+    
+    },
+    seasameInfo:{ 
+            intro:'同意《芝麻信用信息授权协议》',
+            value: '同意《芝麻信用信息授权协议》',
+            checked : true
+            
+    }
     
   },
 
@@ -61,7 +74,8 @@ Page({
     var leftWidth = e.detail.scrollLeft;
      var index = Math.round(leftWidth / width);
     this.tapMove(index,width)
-    
+    console.log('左边间距是',leftWidth);
+    console.log('总长度是',scrollWidth);
     
   },
 
@@ -81,7 +95,8 @@ Page({
   
   tapMove: function(index,width) {
   
-  console.log(index);
+  console.log(index,width);
+
     this.setData({
               toView: order[index],
               scrollLeft: index * width
@@ -95,7 +110,9 @@ Page({
 
     // console.log(this.data.scrollLeft);
   },
-  checkboxChange: function(e) {
+
+  //打钩框第一个点击事件
+  checkboxOne: function(e) {
    var contactInfo = this.data.contactInfo;
    contactInfo.checked = !contactInfo.checked ;
    this.setData({
@@ -103,5 +120,38 @@ Page({
    })
 
    console.log(contactInfo.checked);
-  }
+  },
+  //打钩框第二个点击事件
+  checkboxTwo: function(e) {
+   var alipayInfo = this.data.alipayInfo;
+   alipayInfo.checked = !alipayInfo.checked ;
+   this.setData({
+     alipayInfo:alipayInfo
+   })
+
+   console.log(alipayInfo.checked);
+  },
+  //打钩框第三个点击事件
+  checkboxThree: function(e) {
+   var seasameInfo = this.data.seasameInfo;
+   seasameInfo.checked = !seasameInfo.checked ;
+   this.setData({
+     seasameInfo:seasameInfo
+   })
+
+   console.log(seasameInfo.checked);
+  },
+
+//  三个按钮不同的点击事件
+bindAlipay:function(e) {
+    console.log('黄');
+},
+bindContacts:function(e) {
+    console.log('红');
+},
+bindSeasame:function(e) {
+    console.log('蓝');
+}
+
+
 })

@@ -33,6 +33,7 @@ page{
 
 
 .scroll-view{
+    background: red;
      white-space: nowrap;
      height: 100%;
  }
@@ -46,7 +47,7 @@ page{
 
 /*#F76260*/
 .bc_red{
-    background-color: rgb(230, 230, 230) ;
+    background-color: rgb(230,230, 230) ;
 }
 /*#10AEFF*/
 .bc_blue{
@@ -102,7 +103,7 @@ page{
 
 .body-middle{
     
-    width: 100%;
+    width: 90%;
     height: 70px;
     text-align: center;
 
@@ -113,14 +114,21 @@ page{
 .body-middle-text{
    white-space:pre-wrap;
    text-align: center;
+   background: red;
 }
 /*下部bottom*/
 .body-bottom{
    height: 10%;
    font-size: 15px;
+   background: blue;
 }
 
 checkbox{
-    margin-left: 20%;
+    margin-left: 5px;
 }
 
+/*支付宝排版*/
+.yellow-icon{
+    width: 160px;
+    height:60px;
+}
