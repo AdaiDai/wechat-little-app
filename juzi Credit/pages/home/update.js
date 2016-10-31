@@ -19,7 +19,15 @@ Page({
 
     ],
     toView: 'red',//指定滚动到某个视图
-    scrollLeft: 0  //设置偏移量
+    scrollLeft: 0,  //设置偏移量
+    intro:'绑定通讯录您的信用将得到全面的评估!\n请进入设置 - 隐私 - 通讯录 - 桔子信用\n打开权限',
+
+    contactInfo:{ 
+           value: '同意《通讯录授权协议》',
+           checked : true
+           
+           }
+    
   },
 
   //加载参数 设置名字
@@ -37,6 +45,7 @@ Page({
 //滚动到最左边触发
   left: function(e) {
     console.log(e)
+
   },
   //滚动到最右边触发
   right: function(e) {
@@ -85,5 +94,14 @@ Page({
     // })
 
     // console.log(this.data.scrollLeft);
+  },
+  checkboxChange: function(e) {
+   var contactInfo = this.data.contactInfo;
+   contactInfo.checked = !contactInfo.checked ;
+   this.setData({
+     contactInfo:contactInfo
+   })
+
+   console.log(contactInfo.checked);
   }
 })

@@ -31,9 +31,83 @@
                 scroll-into-view="{{toView}}" 
                 scroll-left="{{scrollLeft}}">
 
-        <view id="red"  class="scroll-view-item bc_red"></view>
-        <view id="yellow" class="scroll-view-item bc_yellow"></view>
-        <view id="blue" class="scroll-view-item bc_blue"></view>
+        <view id="red"  class="scroll-view-item bc_red">
+          <!-- 第一道横线-->
+          <view class="hr"></view>
+          <!--左边的小模块-->
+          <view class="leftGapView"></view>
+          <!--中间的文字区域-->
+          <view class="red-title">手机通讯录绑定</view>
+          <!-- 第二道横线-->
+          <view class="hr"></view>
+
+          <!--下面body区域-->
+          <view class="body-body">
+              <view class="body-top">
+                 <image class="red-icon" src="../../images/update/icon_tongxunlu_larg.png" />
+                 <text>通讯录</text>
+              </view>  
+              
+              <!--说明信息-->
+              <view class="body-middle">
+                  <text class="body-middle-text">{{intro}}</text>
+              </view> 
+              
+              <!--同意通讯录-->
+              <view class="body-bottom">
+                  <!--左边一个checkbox，右边一个横幅-->
+                  
+                    <checkbox-group bindchange="checkboxChange">
+                      <checkbox checked="{{!contactInfo.checked}}"/>      {{contactInfo.value}}
+                    </checkbox-group>
+                  
+              </view>
+
+               <!--绑定按钮-->
+              
+              <button type="warn" bindtap="bindContacts" disabled="{{contactInfo.checked}}">绑定授权</button>
+
+              
+                        
+          </view>
+          
+          
+        </view>
+
+
+        <view id="yellow" class="scroll-view-item bc_yellow">
+            <!-- 第一道横线-->
+            <view class="hr"></view>
+            <!--左边的小模块-->
+          <view class="leftGapView"></view>
+            <!--中间的文字区域-->
+            <view class="red-title">支付宝绑定</view>
+            <!-- 第二道横线-->
+            <view class="hr"></view>
+            
+            <!--下面body区域-->
+          <view class="body-body">
+          </view>
+            
+        </view>
+
+
+        <view id="blue" class="scroll-view-item bc_blue">
+            <!-- 第一道横线-->
+            <view class="hr"></view>
+            <!--左边的小模块-->
+          <view class="leftGapView"></view>
+            <!--中间的文字区域-->
+            <view class="red-title">芝麻信用绑定</view>
+            <!-- 第二道横线-->
+            <view class="hr"></view>
+
+            <!--下面body区域-->
+          <view class="body-body">
+          </view>
+
+
+        </view>
     </scroll-view>
                 
             
