@@ -22,6 +22,8 @@ Page({
     ],
     toView: 'red',//指定滚动到某个视图
     scrollLeft: 0,  //设置偏移量
+    width : 0,
+    
     
 
     contactInfo:{ 
@@ -54,6 +56,21 @@ Page({
         console.log(res);
       }
     })
+
+     var page = this;
+    //获取屏幕宽度
+    wx.getSystemInfo({
+  success: function(res) {
+    
+    page.setData({
+      width : res.windowWidth
+    })
+   
+    
+  }
+}) 
+
+
   },
  
 
@@ -194,7 +211,22 @@ bindContacts:function(e) {
 },
 bindSeasame:function(e) {
     console.log('蓝');
-}
+},
+
+//顶部标题点击
+titleClick:function(e) {
+  
+  var index = e.currentTarget.id;
+  var width = this.data.width;
+
+  console.log(e.currentTarget.id,width);
+
+  this.setData({
+              toView: order[index],
+              scrollLeft: index * width
+
+            })
+   }
 
 
 })

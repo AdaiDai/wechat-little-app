@@ -2,7 +2,7 @@
   <!--用一个循环创建三个标题-->
   <block wx:for-items="{{titles}}" wx:for-item="title">
               
-                <view class="title-item">
+                <view class="title-item" bindtap="titleClick" id="{{index}}">
                       
                       <!--上面的图片-->
                       <image class="title-item-image" src="{{title.url}}" />
