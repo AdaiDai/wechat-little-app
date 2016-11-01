@@ -215,6 +215,7 @@ bindSeasame:function(e) {
 
 //顶部标题点击
 titleClick:function(e) {
+
   
   var index = e.currentTarget.id;
   var width = this.data.width;
